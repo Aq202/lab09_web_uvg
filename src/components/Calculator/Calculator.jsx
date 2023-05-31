@@ -105,7 +105,7 @@ function Calculator() {
         <div className={styles.history}>
           {error ? '\u00A0' : `${partialResult ?? '\u00A0'} ${operation ?? ''}`}
         </div>
-        <div className={styles.display}>
+        <div className={styles.display} data-testid="display">
           {error ? 'ERROR' : displayNumber ?? partialResult ?? 0}
         </div>
       </div>
